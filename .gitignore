@@ -1,0 +1,6 @@
+.vscode/
+*.iml
+*.classpath
+*.project
+*.tmp
+config.properties
