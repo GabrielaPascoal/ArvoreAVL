@@ -1,4 +1,4 @@
-package main.java.entities;
+package main.java.models;
 
 public class Veiculo {
     private Condutor condutor;
@@ -7,6 +7,8 @@ public class Veiculo {
     private String renavam;
     private String modelo;
 
+    public Veiculo(){}
+
     public Veiculo(Condutor condutor, String placa, String dataFab, String renavam, String modelo) {
         this.condutor = condutor;
         this.placa = placa;
@@ -14,6 +16,8 @@ public class Veiculo {
         this.renavam = renavam;
         this.modelo = modelo;
     }
+
+
 
     public Condutor getCondutor() {
         return condutor;
@@ -53,5 +57,16 @@ public class Veiculo {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    @Override
+    public String toString() {
+        return "Veiculo{" +
+                "condutor=" + condutor +
+                ", placa='" + placa + '\'' +
+                ", dataFab='" + dataFab + '\'' +
+                ", renavam='" + renavam + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
     }
 }
